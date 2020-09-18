@@ -40,7 +40,7 @@ def display_account():
 
 
 def main():
-    print("Hello Welcome to your password locker. What is your name?")
+    print("Hello! Welcome to your password locker. What is your name?")
     user_name = input()
     print(f"Hello {user_name}. what would you like to do?")
     print('\n')
