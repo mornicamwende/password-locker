@@ -95,15 +95,7 @@ class TestAccount(unittest.TestCase):
 
         self.assertEqual(Account.display_account(),Account.account_list)
 
-    # def test_copy_email(self):
-    #     '''
-    #     Test to confirm that we are copying the email address from a found contact
-    #     '''
 
-    #     self.new_account.save_account()
-    #     Account.copy_email("0712345678")
-
-    #     self.assertEqual(self.new_account.email,.paste())
 
 
 if __name__ == '__main__':
