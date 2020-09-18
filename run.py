@@ -62,7 +62,7 @@ def main():
                             print ('\n')
                     elif short_code == 'dc':
                             if display_account():
-                                    print("Here is a list of all your accounts")
+                                    print("Here is a list of all your accounts.")
                                     print('\n')
                                     for account in display_account():
                                         print(f"Name: {account.account_name} {account.user_name} {account.password}")
