@@ -65,7 +65,6 @@ class Account:
 
     # @classmethod
     # def copy_email(cls,number):
-    #     contact_found = Contact.find_by_number(number)
-    
+     
 
     
