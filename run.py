@@ -38,6 +38,10 @@ def display_account():
     '''
     return Account.display_account()
 
+def generate_password():
+    gen_pwrd = Account.generate_password()
+    return gen_pwrd
+
 
 def main():
     print("Hello! Welcome to your password locker. What is your name?")
@@ -58,14 +62,15 @@ def main():
                             password = input()
                             save_account(create_account(account_name,user_name,password)) # create and save new account.
                             print ('\n')
-                            print(f"New Account {account_name} {user_name} with the password {password} created")
+                            print(f"Hello {user_name} you have created  {account_name} account with the password {password} ")
                             print ('\n')
+
                     elif short_code == 'dc':
                             if display_account():
                                     print("Here is a list of all your accounts.")
                                     print('\n')
                                     for account in display_account():
-                                        print(f"Name: {account.account_name} {account.user_name} {account.password}")
+                                        print(f"Account Name: {account.account_name} \n Username: {account.user_name} \n password: {account.password}")
                                     #     print(f": {contact.phone_number}")
                                     
                                     print('\n')
