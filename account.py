@@ -1,3 +1,4 @@
+from string import ascii_letters, digits
 
 class Account:
     """
@@ -25,6 +26,18 @@ class Account:
         '''
 
         Account.account_list.remove(self)
+
+    # def generate_password(self,password_length=8):
+    #     '''
+    #     generates a password whose length is specified
+    #     '''
+    #     alphabets = ascii_letters + digits
+    #     # password =""
+    #     # for i in range(password_length):
+    #     #     letter = choice(alphabets)
+    #     #     password = password+letter        
+    #     password = "".join(choice(alphabets) for x in range(password_length))
+    #     return password
 
     @classmethod
     def find_by_account_name(cls,string):
@@ -62,6 +75,11 @@ class Account:
         method that returns the account list
         '''
         return cls.account_list
+
+    def generate_password(stringLength = 8):
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "(|/~!.@,)#{?$[%]^}&*"
+        return ''.join(random.choice(password) for i in range(stringLength))
+
 
 
 
