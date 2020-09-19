@@ -76,9 +76,9 @@ class Account:
         '''
         return cls.account_list
 
-    def generate_password(stringLength = 8):
-        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "(|/~!.@,)#{?$[%]^}&*"
-        return ''.join(random.choice(password) for i in range(stringLength))
+    # def generate_password(stringLength = 8):
+    #     password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "(|/~!.@,)#{?$[%]^}&*"
+    #     return ''.join(random.choice(password) for i in range(stringLength))
 
 
 
