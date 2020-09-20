@@ -1,4 +1,4 @@
-# Password_checker
+# Password_Locker
 #### Author: [Mornica Mwende]
 ## Description
 This project is a python application that manages  login, signup credentials and displaying accounts of a person and email for each account. It also stores the credentials of the user when they need it like email and phone number.
